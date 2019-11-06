@@ -10,14 +10,58 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/ui_layout_linearlayout"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/ui_layout_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#00BFFF"
+                android:text="LinearLayout"
+                android:textAllCaps="false"/>
+
+            <Button
+            android:id="@+id/ui_layout_framelayout"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:background="#00BFFF"
-            android:text="LinearLayout"
+            android:text="FrameLayout"
             android:textAllCaps="false"/>
+
+            <Button
+            android:id="@+id/ui_layout_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#00BFFF"
+            android:text="RelativeLayout"
+            android:textAllCaps="false"/>
+
+            <Button
+            android:id="@+id/ui_layout_gridlayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#00BFFF"
+            android:text="GridLayout"
+            android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/ui_layout_tablelayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#00BFFF"
+                android:text="TableLayout"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
 
     </ScrollView>
 
