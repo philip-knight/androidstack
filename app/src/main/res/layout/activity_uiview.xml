@@ -16,48 +16,49 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/ui_layout_linearlayout"
+                android:id="@+id/ui_layout_listview"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
                 android:background="#00BFFF"
-                android:text="LinearLayout"
+                android:text="List View Entries"
                 android:textAllCaps="false"/>
 
             <Button
-            android:id="@+id/ui_layout_framelayout"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:background="#00BFFF"
-            android:text="FrameLayout"
-            android:textAllCaps="false"/>
-
-            <Button
-            android:id="@+id/ui_layout_relativelayout"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:background="#00BFFF"
-            android:text="RelativeLayout"
-            android:textAllCaps="false"/>
-
-            <Button
-            android:id="@+id/ui_layout_gridlayout"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:background="#00BFFF"
-            android:text="GridLayout"
-            android:textAllCaps="false"/>
-
-            <Button
-                android:id="@+id/ui_layout_tablelayout"
+                android:id="@+id/ui_layout_listview_adapter"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
                 android:background="#00BFFF"
-                android:text="TableLayout"
+                android:text="List View Adapter"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/ui_layout_listview_base_adapter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#00BFFF"
+                android:text="List View Base Adapter"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/ui_layout_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#00BFFF"
+                android:text="Recycler View"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/ui_layout_pro_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#00BFFF"
+                android:onClick="recyclerViewClick"
+                android:text="Pro Recycler View"
                 android:textAllCaps="false"/>
 
         </LinearLayout>
