@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center_vertical"
     android:orientation="horizontal">
 
     <!-- 定义一个ImageView，用于作为列表项的一部分。 -->
@@ -10,40 +11,51 @@
         android:id="@+id/simple_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        tools:src="@drawable/leaf" />
+        android:layout_marginLeft="10dp"
+        tools:src="@drawable/leaf"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
         <!-- 定义一个TextView，用于作为列表项的一部分。 -->
-        <TextView
-            android:id="@+id/simple_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
-            android:textColor="#f0f"
-            android:textSize="20dp"
-            tools:text="Title" />
-        <!-- 定义一个TextView，用于作为列表项的一部分。 -->
-        <TextView
-            android:id="@+id/simple_subtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
-            android:textSize="14dp"
-            tools:text="SubTitle" />
-    </LinearLayout>
 
-    <CheckBox
-        android:id="@+id/simple_checkbox"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginEnd="100dp"
-        android:clickable="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/simple_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textColor="#f0f"
+                android:textSize="20dp"
+                tools:text="Title" />
+            <!-- 定义一个TextView，用于作为列表项的一部分。 -->
+            <TextView
+                android:id="@+id/simple_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textSize="14dp"
+                tools:text="SubTitle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <CheckBox
+                android:id="@+id/simple_checkbox"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:focusable="false" />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

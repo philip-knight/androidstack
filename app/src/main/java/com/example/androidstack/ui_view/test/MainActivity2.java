@@ -95,13 +95,27 @@ public class MainActivity2 extends AppCompatActivity implements MyListAdapter.Ch
     public void allSelect(View v)
     {
         System.out.println("========>>>>>>" + cb_button_all.isChecked());
+//        if (cb_button_all.isChecked()) {
+//            flag = true;
+//        }
+//        else {
+//            flag = false;
+//        }
+//        if (flag) {
+//            for (int i = 0; i < list.size(); i++) {
+//
+//                isCheckeds.put(i, true);
+//                MyListAdapter.setIsSelected(isCheckeds);
+//            }
+//        }else {
+//            for (int i = 0; i < list.size(); i++) {
+//
+//                isCheckeds.put(i, false);
+//                MyListAdapter.setIsSelected(isCheckeds);
+//            }
+//        }
+
         if (cb_button_all.isChecked()) {
-            flag = true;
-        }
-        else {
-            flag = false;
-        }
-        if (flag) {
             for (int i = 0; i < list.size(); i++) {
 
                 isCheckeds.put(i, true);
@@ -114,6 +128,8 @@ public class MainActivity2 extends AppCompatActivity implements MyListAdapter.Ch
                 MyListAdapter.setIsSelected(isCheckeds);
             }
         }
+
+
         //更新适配器
         adapter.notifyDataSetChanged();
     }

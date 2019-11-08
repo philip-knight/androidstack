@@ -116,7 +116,7 @@ public class ListViewBaseAdapter extends BaseAdapter {
             }
         });
 
-        return convertView;
+        return mConvertView;
     }
 
     static class ViewHolder {

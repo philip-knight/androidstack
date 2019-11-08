@@ -82,11 +82,7 @@ public class ListViewBaseAdapterActivity extends AppCompatActivity implements Li
 
         mListViewBaseAdapter = new ListViewBaseAdapter(mListViewContentBean, ListViewBaseAdapterActivity.this);
 
-        try {
-            listView.setAdapter(mListViewBaseAdapter);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        listView.setAdapter(mListViewBaseAdapter);
 
         mListViewBaseAdapter.setCheckedAllListener(this);
 
@@ -94,11 +90,12 @@ public class ListViewBaseAdapterActivity extends AppCompatActivity implements Li
             @Override
             public void onClick(View v) {
                 for (int i = 0; i < mListViewContentBean.size(); i++) {
-                    if (ListViewBaseAdapter.getIsSelected().get(i)) {
-                        ListViewBaseAdapter.getIsSelected().put(i, false);
-                    } else {
-                        ListViewBaseAdapter.getIsSelected().put(i, true);
-                    }
+//                    if (ListViewBaseAdapter.getIsSelected().get(i)) {
+//                        ListViewBaseAdapter.getIsSelected().put(i, false);
+//                    } else {
+//                        ListViewBaseAdapter.getIsSelected().put(i, true);
+//                    }
+                    ListViewBaseAdapter.getIsSelected().put(i, !(ListViewBaseAdapter.getIsSelected().get(i)));
                 }
                 mListViewBaseAdapter.notifyDataSetChanged();
             }
@@ -154,11 +151,15 @@ public class ListViewBaseAdapterActivity extends AppCompatActivity implements Li
 //    }
 
     public void allSelect(View v) {
-        if (mCheckBoxAll.isChecked()) {
-            mCheckBoxFlag = true;
-        } else {
-            mCheckBoxFlag = false;
-        }
+//        if (mCheckBoxAll.isChecked()) {
+//            mCheckBoxFlag = true;
+//        } else {
+//            mCheckBoxFlag = false;
+//        }
+//
+//        mCheckBoxFlag = mCheckBoxAll.isChecked() ? true : false;
+
+        mCheckBoxFlag = mCheckBoxAll.isChecked();
 
         if (mCheckBoxFlag) {
             for (int i = 0; i < mListViewContentBean.size(); i++) {
@@ -171,6 +172,19 @@ public class ListViewBaseAdapterActivity extends AppCompatActivity implements Li
                 ListViewBaseAdapter.setIsSelected(isCheckeds);
             }
         }
+
+//        if(mCheckBoxAll.isChecked()){
+//            for (int i = 0; i < mListViewContentBean.size(); i++) {
+//                isCheckeds.put(i, true);
+//                ListViewBaseAdapter.setIsSelected(isCheckeds);
+//            }
+//        } else {
+//            for (int i = 0; i < mListViewContentBean.size(); i++) {
+//                isCheckeds.put(i, false);
+//                ListViewBaseAdapter.setIsSelected(isCheckeds);
+//            }
+//        }
+
         mListViewBaseAdapter.notifyDataSetChanged();
     }
 

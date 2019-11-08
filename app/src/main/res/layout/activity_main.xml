@@ -33,6 +33,23 @@
                 android:text="UI View Center"
                 android:textAllCaps="false"/>
 
+            <Button
+                android:id="@+id/http_connection"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#00BFFF"
+                android:onClick="httpConnection"
+                android:text="Http Down Load"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:id="@+id/tv_http_connection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Down load"
+                />
         </LinearLayout>
 
     </ScrollView>

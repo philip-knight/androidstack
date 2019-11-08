@@ -25,6 +25,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private Context mContext;
     private ArrayList<Integer> mData;
 
+
     public RecyclerViewAdapter(Context mContext, ArrayList<Integer> mData) {
         this.mContext = mContext;
         this.mData = mData;
@@ -47,11 +48,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(MyViewHolder viewHolder, int position){
-        viewHolder.mImageView.setBackgroundResource(mData.get(position));
+        viewHolder.mImageView.setImageResource(mData.get(position));
     }
 
     @Override
     public int getItemCount() {
         return mData.size();
     }
+
 }
