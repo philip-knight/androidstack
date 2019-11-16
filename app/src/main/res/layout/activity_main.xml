@@ -50,6 +50,25 @@
                 android:textSize="20sp"
                 android:text="Down load"
                 />
+
+            <EditText
+                android:id="@+id/edit_text_category"
+                android:hint="Input your favorite"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:id="@+id/http_connection_search"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#00BFFF"
+                android:text="Search"
+                android:textAllCaps="false"/>
+
         </LinearLayout>
 
     </ScrollView>

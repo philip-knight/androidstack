@@ -18,7 +18,6 @@ public class UIViewActivity extends AppCompatActivity implements View.OnClickLis
 
     private Button mGoToListView, mGoToListViewAdapter, mGoToBaseAdapterListView, mGoToRecyclerView;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,6 +65,7 @@ public class UIViewActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     public void recyclerViewClick(View v){
+
         startActivity(new Intent(this, RecyclerViewActivity.class));
     }
 }
