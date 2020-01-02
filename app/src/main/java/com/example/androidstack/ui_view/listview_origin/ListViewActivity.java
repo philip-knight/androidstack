@@ -11,6 +11,7 @@ public class ListViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // 从 arrays 里加载基本数据
         setContentView(R.layout.activity_list_view);
     }
 
@@ -19,6 +20,5 @@ public class ListViewActivity extends AppCompatActivity {
     }
 
     private void initView(){
-
     }
 }

@@ -15,7 +15,7 @@
         <ListView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:entries="@array/listview"
+            android:entries="@array/list_view"
             android:divider="#f00"
             android:dividerHeight="2px"
             android:headerDividersEnabled="true"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="listview">
+    <string-array name="list_view">
         <item>字符串 1</item>
         <item>字符串 2</item>
         <item>字符串 3</item>

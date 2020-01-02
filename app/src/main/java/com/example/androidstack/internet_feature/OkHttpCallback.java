@@ -1,6 +1,8 @@
 package com.example.androidstack.internet_feature;
 
-import java.util.ArrayList;
+import java.io.IOException;
+
+import okhttp3.Response;
 
 /**
  * Created by Philip.Knight.
@@ -12,5 +14,5 @@ import java.util.ArrayList;
  */
 public interface OkHttpCallback {
     void onError(String msg);
-    void onResponse(ArrayList<String> result);
+    void onResponse(Response response) throws IOException;
 }

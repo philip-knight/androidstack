@@ -8,7 +8,7 @@ package com.example.androidstack.ui_view.test;
  * Desc:
  * Version:
  */
-public class Test {
+public class CheckBoxBean {
     private String name;
     private boolean isCheck;
 

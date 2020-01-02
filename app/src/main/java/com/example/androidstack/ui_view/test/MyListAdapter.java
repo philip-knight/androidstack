@@ -25,7 +25,7 @@ import java.util.List;
  */
 public class MyListAdapter extends BaseAdapter {
 
-    List<Test> list = new ArrayList<Test>();
+    List<CheckBoxBean> list = new ArrayList<CheckBoxBean>();
     private static SparseBooleanArray isSelected;/**用SparseBooleanArray来代替map**/
     Context context;
     HolderView holderView = null;
@@ -39,7 +39,7 @@ public class MyListAdapter extends BaseAdapter {
     }
 
 
-    public MyListAdapter(List<Test> list, Context context) {
+    public MyListAdapter(List<CheckBoxBean> list, Context context) {
         // TODO Auto-generated constructor stub
         this.context = context;
         this.list = list;
@@ -76,7 +76,7 @@ public class MyListAdapter extends BaseAdapter {
     }
 
     @Override
-    public Test getItem(int position) {
+    public CheckBoxBean getItem(int position) {
         // TODO Auto-generated method stub
         return list.get(position);
     }
@@ -105,7 +105,7 @@ public class MyListAdapter extends BaseAdapter {
             holderView = (HolderView)view.getTag();
         }
 
-        final Test item = getItem(position);
+        final CheckBoxBean item = getItem(position);
         if (item != null) {
             holderView.tv_name.setText(item.getName());
             holderView.cb_button.setChecked(isSelected.get(position));

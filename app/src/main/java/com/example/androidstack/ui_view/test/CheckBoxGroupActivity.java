@@ -22,11 +22,11 @@ import java.util.List;
  * Desc:
  * Version:
  */
-public class MainActivity2 extends AppCompatActivity implements MyListAdapter.CheckedAllListener {
+public class CheckBoxGroupActivity extends AppCompatActivity implements MyListAdapter.CheckedAllListener {
 
     MyListAdapter adapter;
     ListView listView;
-    List<Test> list;
+    List<CheckBoxBean> list;
     CheckBox cb_button_all;
 
     Button btn_select;
@@ -48,9 +48,9 @@ public class MainActivity2 extends AppCompatActivity implements MyListAdapter.Ch
         list = new ArrayList<>();
         for (int i = 0; i <= 20; i++)
         {
-            Test test = new Test();
-            test.setName("sister" + i);
-            list.add(test);
+            CheckBoxBean checkBoxBean = new CheckBoxBean();
+            checkBoxBean.setName("sister" + i);
+            list.add(checkBoxBean);
         }
         adapter = new MyListAdapter(list,this);
         adapter.setCheckedAllListener(this);

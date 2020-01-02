@@ -1,4 +1,4 @@
-package com.example.androidstack.internet_feature;
+package com.example.androidstack.gsonparse;
 
 import java.util.List;
 

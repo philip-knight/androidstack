@@ -14,18 +14,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui_view.recyclerview_origin.RecyclerViewActivity"></activity>
+        <activity android:name=".ui_view.recyclerviewpro.RecyclerViewProActivity" />
+        <activity android:name=".ui_view.canvas.CanvasActivity" />
+        <activity android:name=".ui_view.recyclerview_origin.RecyclerViewActivity" />
         <activity android:name=".ui_view.listview_base_adapter.ListViewBaseAdapterActivity" />
         <activity android:name=".ui_view.listview_adapter.ListViewAdapterActivity" />
-        <activity android:name=".ui_view.UIViewActivity" />
+        <activity android:name=".ui_view.UIViewCenterActivity" />
         <activity android:name=".ui_view.listview_origin.ListViewActivity" />
         <activity android:name=".ui_layout.TableLayoutActivity" />
         <activity android:name=".ui_layout.GridActivity" />
         <activity android:name=".ui_layout.RelativeLayoutActivity" />
         <activity android:name=".ui_layout.FrameLayoutActivity" />
-        <activity android:name=".ui_layout.UILayoutCenter" />
+        <activity android:name=".ui_layout.UILayoutCenterActivity" />
         <activity android:name=".ui_layout.LinearLayoutActivity" />
-        <activity android:name=".ui_view.test.MainActivity2" />
+        <activity android:name=".ui_view.test.CheckBoxGroupActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

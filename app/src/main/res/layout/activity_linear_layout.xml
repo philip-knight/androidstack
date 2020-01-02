@@ -6,6 +6,23 @@
     android:gravity="center|right"
     >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/bn1"
+            android:layout_gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="bn1"/>
+        <Button
+            android:id="@+id/bn2"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="bn2"/>
+    </LinearLayout>
+
     <Button
         android:id="@+id/bn1"
         android:layout_gravity="center|left"
